@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.background-div {
+    background-color: #FFB6C1;
+    width: 1350px;
+    height: 870px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: background 1s ease-in-out, opacity 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out, opacity 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+
+
+.topmost-div {
+    height: 80px;
+}
+
+.clearfix {
+    clear: both;   
+}
+
+.blank-div {
+    height: 13px;
+}
+
+.feedback-div {
+    background-color: rgba(231,105,105,0.7);
+    width: 1200px;
+    height: 50px;
+    margin: 0px 75px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+
+.top-div {
+    height: 300px;
+    width: 1200px;
+    
+}
+
+.photo-div {
+    height: 250px;
+    width: 300px;
+    float: left;
+    display: inline-block;
+    background-color: yellow;
+    margin: 270px 0px 0px 170px;
+}
+
+.wrap {
+    text-align: center;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective-origin: 50% 150px;
+    -webkit-perspective-origin: 50% 150px;
+    -moz-perspective-origin: 50% 150px;
+    -o-perspective-origin: 50% 150px;
+}
+
+.cube {
+    float: left;
+    display: inline-block;
+    margin: 170px 0px 0px 170px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    animation: spin 5s infinite linear;
+    -webkit-animation: spin 5s infinite linear;
+    -moz-animation: spin 5s infinite linear;
+    -o-animation: spin 5s infinite linear;
+    
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from {transform: rotateY(0);}
+    to {transform: rotateY(360deg);}
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotateY(0);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+
+.cube div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    text-align: center;
+    box-shadow: inset 0 0 30px;
+}
+
+.front {
+    transform: translateZ(150px);
+    -webkit-transform: translateZ(150px);
+}
+
+.back {
+    transform: translateZ(-150px) rotateY(180deg);
+    -webkit-transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+    transform: translateZ(-150px) rotateY(270deg);
+    transform-origin: center left;
+    -webkit-transform: translateZ(-150px) rotateY(270deg);
+    -webkit-transform-origin: center left;
+}
+
+.right {
+    transform: translateZ(-150px) rotateY(-270deg);
+    transform-origin: top right;
+    -webkit-transform: translateZ(-150px) rotateY(-270deg);
+    -webkit-transform-origin: top right;
+}
+
+.cube-font p{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 110px;
+}
+
+/*
+.right-div {
+    height: 250px;
+    width: 300px;
+    float: right;
+    display: inline-block;
+    background-color: yellow;
+    margin: 70px 70px 0px 0px;
+    animation: works 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation: works 3s;
+    -webkit-animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+}
+
+@keyframes works {
+    from {background: yellow;}
+    to {background: red;}
+}
+@-webkit-keyframes works {
+    from {background: yellow;}
+    to {background: red;}
+}
+*/
+
+.name-div {
+    margin: 100px;
+    margin-left: 200px;
+}
+
+.name-div div {
+    
+    padding: 15px;
+    display: inline-block;
+}
+
+.name-div span{
+    font-family: cursive;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 100px;
+}
+
+.name-div h1 {
+    font-family: cursive;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 150px;
+}
+
+.right-div {
+    float: right;
+    display: inline-block;
+    margin: 170px 0px 0px 170px;
+}
+
+.container {
+    border: 1px solid;
+    perspective: 800px;
+}
+
+.flipper {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.container:hover .flipper, .container.hover .flipper {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.container, .flip-card-front, .flip-card-back {
+    width: 400px;
+    height: 350px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: red;   
+}
+
+.flip-card-back {
+    background-color: green;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.nav-bar-div {
+    background-color: rgba(231,105,105,0.7);
+    width: 1200px;
+    height: 50px;
+    margin: 310px 75px 75px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    font-family: special1;
+    font-weight: bold;
+}
+
+ul {
+    padding-top: 18px;
+}
+
+li {
+    float: right;
+    font-family: cursive;
+    display: inline;
+    border-width: none;
+    margin: 25px;
+    padding: 5px;
+    box-shadow: 7px 5px 2px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
