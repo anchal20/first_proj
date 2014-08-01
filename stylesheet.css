@@ -47,10 +47,15 @@ table {
 	border-spacing: 0;
 }
 
-
+.pink {background-color: #FFB6C1;}
+.magenta {background-color: #FF3399;}
+.red {background-color: #980000; }
+.blue {background-color: #02c9c9;}
+.green {background-color: #99FF33;}
+.yellow {background-color: #FFFF33;}
 
 .background-div {
-    background-color: #FFB6C1;
+    
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -73,7 +78,9 @@ table {
 *****/
 
 .topmost-div {
+    width: 100%;
     height: 80px;
+    position: fixed;
 }
 
 .clearfix {
@@ -98,10 +105,19 @@ table {
     -webkit-transition: -webkit-transform 1s ease-in-out;
     -moz-transition: -moz-transform 1s ease-in-out;
     -o-transition: -o-transform 1s ease-in-out;
+    -webkit-transform:rotate(20deg);
+    transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+}
+
+.reset-intro-content{
+    -webkit-transition:-webkit-transform 1s ease-in-out;
     -webkit-transform:rotate(10deg);
-    transform:rotate(10deg);
+     transform:rotate(10deg);
     -moz-transform:rotate(10deg);
-    -o-transform:rotate(10deg);
+     transition:-webkit-transform 1s ease-in-out;
+     transition:-moz-transform 1s ease-in-out;
 }
 
 .animate-intro {
@@ -178,21 +194,12 @@ table {
 }
 
 
-
-.reset-intro-content{
-    -webkit-transition:-webkit-transform 1s ease-in-out;
-    -webkit-transform:rotate(10deg);
-     transform:rotate(10deg);
-    -moz-transform:rotate(10deg);
-     transition:-webkit-transform 1s ease-in-out;
-     transition:-moz-transform 1s ease-in-out;
-}
-
 .top-div {
-    height: 50%;
     width: 100%;
+    height: 700px;
     margin-top: 50%;
     overflow: hidden;
+    border: 1px solid;
 }
 
 
@@ -216,10 +223,10 @@ table {
     position: relative;
     text-align: center;
     width: 300px;
-    animation: spin 5s infinite linear;
-    -webkit-animation: spin 5s infinite linear;
-    -moz-animation: spin 5s infinite linear;
-    -o-animation: spin 5s infinite linear;
+    animation: spin 10s infinite linear;
+    -webkit-animation: spin 10s infinite linear;
+    -moz-animation: spin 10s infinite linear;
+    -o-animation: spin 10s infinite linear;
     
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -238,6 +245,7 @@ table {
 }
 
 .cube div {
+    background-color: wheat;
     position: absolute;
     width: 300px;
     height: 300px;
@@ -276,6 +284,13 @@ table {
     padding-top: 110px;
 }
 
+.stopRotation {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+}
+
 
 .right-div {
     float: right;
@@ -283,14 +298,90 @@ table {
     margin: 170px 100px 100px 170px;
 }
 
+.container-skill {
+    background-color: wheat;
+    border: wheat 1px solid;
+    width: 550px;
+    height: 350px;
+    
+}
+
+.right-div div {
+    border-left:#990000 1px solid;
+    height: 53px;
+    
+    text-align: center;
+}
+
+.skill-bar {
+    width: 59px;
+    background:#990000;
+    padding-top: 22px;
+    font-family: cursive;
+    font-weight: bold;
+    word-wrap: break-word;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+
+#skill-meter {
+    margin-top: 30px;
+    height: 18px;
+    border-bottom:#990000 3px solid;
+}
+
+#skill-meter span {
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+.skill1-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 420px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill2-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 350px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill3-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 210px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill4-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 300px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+
 .nav-bar-div {
     overflow: hidden;
     width: 100%;
-    height: 50px;
-    margin: 310px 75px 75px;
+    height: 700px;
 }
 
 .container {
+    margin: 12% 0 10% 8%;
     border: 1px solid;
     perspective: 800px;
 }
@@ -302,11 +393,16 @@ table {
     -o-transition: 1s;
     position: relative;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
 }
 
 .container:hover .flipper, .container.hover .flipper {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .container, .flip-card-front, .flip-card-back {
@@ -317,6 +413,9 @@ table {
 .flip-card-front, .flip-card-back {
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
 }
 
 
@@ -328,6 +427,8 @@ table {
     background-color: green;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 
@@ -337,7 +438,7 @@ ul {
 }
 
 li {
-    float: right;
+    
     font-family: cursive;
     display: inline;
     border-width: none;
@@ -349,4 +450,5 @@ li {
 
 a {
     text-decoration: none;
+    text-decoration-color: none;
 }

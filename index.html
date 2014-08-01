@@ -7,23 +7,24 @@
         <script></script>
     </head>
     <body>
-        <div class="background-div">
+        <div class="background-div pink">
             <div class="blank-div"></div>
             <div class="topmost-div clearfix">
                 <div >
                     <ul>
                     <li><a href="index.html" id="home">HOME</a></li>
-                    <li><a href="index.html">MY WORK</a></li>
-                    <li><a href="index.html">ABOUT ME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
                 </ul>
                 </div>
             </div>
-            <section class="intro clearfix animate-intro" id="home-section">
+            <section class="intro clearfix reset-intro-content" id="home-section">
                 <div class="big-heading">
-                    <div>
-                    <span class="lth big-letter" ></span>
-                    <span class="lti big-letter"></span>
-                    <span class="exclamation big-letter"></span></div>
+                    
+                    <span class="lth big-letter" id="H" ></span>
+                    <span class="lti big-letter" id="I" ></span>
+                    <span class="exclamation big-letter" id="exclm"></span>
+                    <span id="blank"></span>
                     <span class="ltt big-letter"></span>
                     <span class="lth big-letter"></span>
                     <span class="lti big-letter"></span>
@@ -39,30 +40,34 @@
                 </div>
                 
             </section>
-            <div class="dialoge-div">
-                
-            </div>
-            <div class="dialoge-div">
-                
-            </div>
-            <div class="top-div">
+            <div id="skills" class="top-div" style="background-color: black;">
                 <div class="wrap">
                 <div class="cube">
-                    <div class="front"><a class="cube-font"><p>HTML</p></a></div>
-                    <div class="back"><a class="cube-font"><p>CSS</p></a></div>
-                    <div class="left"><a class="cube-font"><p>JQuery</p></a></div>
-                    <div class="right"><a class="cube-font"><p>JavaScript</p></a></div>
+                    <div id="frnt" class="front" onmouseover="stoprotate(); skillstart('div1');" onmouseout="resumerotate(); skillstop('div1');"><a class="cube-font"><p>HTML</p></a></div>
+                    <div id="back" class="back" onmouseover="stoprotate(); skillstart('div2');" onmouseout="resumerotate(); skillstop('div2');"><a class="cube-font"><p>CSS</p></a></div>
+                    <div id="lft" class="left" onmouseover="stoprotate(); skillstart('div3');" onmouseout="resumerotate(); skillstop('div3');"><a class="cube-font"><p>JQuery</p></a></div>
+                    <div id="rht" class="right" onmouseover="stoprotate(); skillstart('div4');" onmouseout="resumerotate(); skillstop('div4');"><a class="cube-font"><p>JavaScript</p></a></div>
                 </div>
                 </div>
-                <div class="right-div container">
-                    
+                <div class="right-div container-skill">
+                    <div class="skill-bar" id="div1" onmouseover="skillstart('div1');" onmouseout="skillstop('div1');">HTML</div>
+                    <div class="skill-bar" id="div2" onmouseover="skillstart('div2');" onmouseout="skillstop('div2');">CSS</div>
+                    <div class="skill-bar" id="div3" onmouseover="skillstart('div3');" onmouseout="skillstop('div3');">JQuery</div>
+                    <div class="skill-bar" id="div4" onmouseover="skillstart('div4');" onmouseout="skillstop('div4');">Java-Script</div>
+                    <div id="skill-meter">
+                        <span style="padding-left:30px;">Beginner</span>
+                        <span style="padding-left:65px;">Mediocre</span>
+                        <span style="padding-left:80px;">Expert</span>
+                    </div>
                 </div>
             </div>
-            <div class="nav-bar-div container">
+            <div id="about-me" class="nav-bar-div blue">
+                <div class="container">
                 <div class="flipper">
                         <div class="flip-card-front"></div>
                         <div class="flip-card-back"></div>
-                    </div>
+                </div>
+               </div>
             </div>
             <div class="contact-div">
                 <div class="contacts">
