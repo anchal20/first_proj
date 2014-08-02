@@ -159,6 +159,7 @@ table {
     -o-transition:background-position .3s;
 }
 
+
 .lth {
     background: url("H.png") no-repeat;
 }
@@ -193,6 +194,109 @@ table {
     background: url("L.png") no-repeat;
 }
 
+.small-heading{
+    margin-bottom:20px;
+    line-height:10px;
+}
+
+.small-heading div {
+    display: inline-block;
+}
+.small-letter{
+    height:37px;
+    width:23px;
+    display:inline-block;
+    transition:background-position .3s ease-in-out;
+    -moz-transition:background-position .3s ease-in-out;
+    -webkit-transition:background-position .3s ease-in-out;
+    -o-transition:background-position .3s ease-in-out;
+}
+
+.sma {
+    background: url("sma.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smb {
+    background: url("smb.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.comma {
+    background: url("comma.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smd {
+    background: url("smd.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 15px;
+    margin-right: -10px;
+}
+.sme {
+    background: url("sme.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smf {
+    background: url("smf.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 15px;
+    margin-right: -10px;
+}
+.smg {
+    background: url("smg.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;    
+}
+.smi {
+    background: url("smi.png") no-repeat;
+    background-position:0px 0px;
+}
+.sml {
+    background: url("sml.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smm {
+    background: url("smm.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: 8px;
+}
+.smn {
+    background: url("smn.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smo {
+    margin-right: -10px;
+    background: url("smo.png") no-repeat;
+    background-position:0px 0px;
+}
+.smp {
+    background: url("smp.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smr {
+    background: url("smr.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smv {
+    background: url("smv.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smw {
+    background: url("smw.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 10px;
+}
+
+#i:hover span,#am:hover span,#a:hover span,#web:hover span,#dev:hover span,#frm:hover span,#bngl:hover span,#com:hover span,#ind:hover span {
+    background-position: 0px -33px;   
+}
 
 .top-div {
     width: 100%;
@@ -380,6 +484,13 @@ table {
     height: 700px;
 }
 
+.bubbles {
+    background: url("bubbles.png");
+    background-color: #02c9c9;
+    width: 100%;
+    height: 700px;
+}
+
 .container {
     margin: 12% 0 10% 8%;
     border: 1px solid;
@@ -431,18 +542,62 @@ table {
     -o-transform: rotateY(180deg);
 }
 
+.contacts-div {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    margin-top: 44.1%;
+}
 
+.footer {
+    background: url("bg_footer.png");
+    width: 100%;
+    height: 80px;
+    
+}
 
-ul {
+.footer li {
+    float: right;
+    display: inline;
+}
+
+.ft-icon {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-top: 25px
+}
+
+ .f-li {
+    background: url("facebook.png");
+}
+.lnk-li {
+    background: url("linked-in.png");
+}
+.email-li {
+    background: url("email.png");
+}
+.cls-li {
+    margin-right: 20px;
+    background: url("close.png");
+}
+
+.info-li {
+    background: url("info.png");
+    margin-right: 20px;
+}
+
+.topmost-div ul {
     padding-top: 18px;
 }
 
-li {
-    
+.topmost-div li {
+    float: right;
     font-family: cursive;
     display: inline;
     border-width: none;
-    margin: 25px;
+    margin-top: 25px;
+    margin-right: 20px;
     padding: 5px;
     box-shadow: 7px 5px 2px;
     background-color: white;

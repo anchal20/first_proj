@@ -6,11 +6,7 @@ $(document).ready(function(){
     
     $(".big-heading").children().css("background-position","0px 135px");
     $("#home-section").addClass("reset-intro-content");
-    /**moveBgAround();**/
-/*****    var name_div= $(".name-div");
-    name_div.animate({marginLeft: '390px'});
-    
-    name_div.animate({fontSize: '150px'}, "slow"); ****/
+    $("#contactID").hide();
     
     
     
@@ -30,18 +26,21 @@ $(document).ready(function(){
     }); ***/
 /*********************** heading animation **************************************/
 function animateHeadingText(){
-    var rannum1=Math.floor(Math.random()*12+1);
-    var rannum2=Math.floor(Math.random()*12+1);
-    var rannum3=Math.floor(Math.random()*12+1);
+    var rannum1=Math.floor(Math.random()*15+1);
+    var rannum2=Math.floor(Math.random()*15+1);
+    var rannum3=Math.floor(Math.random()*15+1);
+    
     var selector1  = '.big-heading span:nth-child(' + rannum1 + ')';
     var selector2  = '.big-heading span:nth-child(' + rannum2 + ')';  
     var selector3  = '.big-heading span:nth-child(' + rannum3 + ')';
-    $(selector1).css("background-position","0px -168px").delay(100);
+    
+    $(selector1).css("background-position","0px -168px").delay(80);
     $(selector1).css("background-position","0px -10px");
-    $(selector2).css("background-position","0px -168px").delay(100);
+    $(selector2).css("background-position","0px -168px").delay(80);
     $(selector2).css("background-position","0px -168px");
-    $(selector3).css("background-position","0px -168px").delay(100);
+    $(selector3).css("background-position","0px -168px").delay(80);
     $(selector3).css("background-position","0px -168px");
+    
 }
 /********************************************************************************/
 var HomeHeadingInterval;        
@@ -107,3 +106,15 @@ function skillstop(id) {
 }
 
 /****************************************************************************************/
+
+/***************************** contacts **************************************/
+function closeContact() {
+    $('#infoID').slideDown();
+    $('#contactID').slideUp();
+}
+
+function showContact() {
+    $('#infoID').hide();
+    $('#contactID').slideDown();   
+}
+/*******************************************************************************/
