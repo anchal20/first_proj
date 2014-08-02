@@ -1,9 +1,5 @@
 /******************document ready function*******************/
-$(document).ready(function(){
-   $(".nav-bar-div").click(function(){
-      $(this).hide(); 
-   });
-    
+$(document).ready(function(){   
     $(".big-heading").children().css("background-position","0px 135px");
     $("#home-section").addClass("reset-intro-content");
     $("#contactID").hide();
