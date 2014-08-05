@@ -47,17 +47,23 @@ table {
 	border-spacing: 0;
 }
 
-.pink {background-color: #FFB6C1;}
+.pink {
+    width: 100%;
+    background-color: #FFB6C1;}
 .magenta {background-color: #FF3399;}
 .red {background-color: #980000; }
-.blue {background-color: #02c9c9;}
+.blue {
+    width: 100%;
+    background-color: #02c9c9;}
 .green {background-color: #99FF33;}
 .yellow {background-color: #FFFF33;}
 
 .background-div {
-    
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     transition: background 1s ease-in-out, opacity 1s ease-in-out;
     -webkit-transition: background 1s ease-in-out, opacity 1s ease-in-out;
@@ -88,18 +94,16 @@ table {
 }
 
 .blank-div {
+    width: 100%;
     height: 13px;
 }
 
 .intro {
-    width: 1020px;
+    width: 100%;
+    position: relative;
     text-align: center;
-    position: absolute;
-    left: 50%;
     top: 150px;
-    margin-left: -470px;
-    height: auto;
-    display: inline-block;
+    height: 700px;
     transition: transform 1s ease-in-out;
     transition: -webkit-transform 1s ease-in-out;
     -webkit-transition: -webkit-transform 1s ease-in-out;
@@ -301,7 +305,6 @@ table {
 .top-div {
     width: 100%;
     height: 700px;
-    margin-top: 50%;
     overflow: hidden;
     border: 1px solid;
 }
@@ -309,7 +312,8 @@ table {
 
 
 .wrap {
-    text-align: center;
+    margin-top: 10%;
+    margin-left: 15%;
     perspective: 800px;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -321,10 +325,7 @@ table {
 }
 
 .cube {
-    float: left;
     display: inline-block;
-    margin: 170px 0px 0px 170px;
-    position: relative;
     text-align: center;
     width: 300px;
     animation: spin 10s infinite linear;
@@ -397,9 +398,10 @@ table {
 
 
 .right-div {
-    float: right;
+    margin-right: 10%;
     display: inline-block;
-    margin: 170px 100px 100px 170px;
+    float: right;
+    overflow: hidden;
 }
 
 .container-skill {
@@ -413,7 +415,6 @@ table {
 .right-div div {
     border-left:#990000 1px solid;
     height: 53px;
-    
     text-align: center;
 }
 
@@ -569,8 +570,7 @@ table {
 .contacts-div {
     width: 100%;
     height: 80px;
-    position: absolute;
-    margin-top: 44.1%;
+    position: relative;
 }
 
 .footer {
@@ -629,5 +629,4 @@ table {
 
 a {
     text-decoration: none;
-    text-decoration-color: none;
 }

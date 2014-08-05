@@ -8,17 +8,17 @@
     </head>
     <body>
         <div class="background-div pink">
-            <div class="blank-div"></div>
+            
             <div class="topmost-div clearfix">
                 
-                    <ul>
+                <ul>
                     <li><a href="#about-me">ABOUT ME</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="index.html" id="home">HOME</a></li>
                 </ul>
                 
             </div>
-            <section class="intro clearfix reset-intro-content" id="home-section">
+            <section class="intro reset-intro-content" id="home-section">
                 <div class="big-heading">
                     
                     <span class="lth big-letter" id="H" ></span>
@@ -88,7 +88,7 @@
                     </span>
                 </div>                
             </section>
-            <div class="contacts-div clearfix">
+            <section class="contacts-div">
                 <div id="contactID" class="footer">
                     <ul>
                         <li >
@@ -104,8 +104,9 @@
                         <li title="Contact Info" class=" ft-icon info-li" onclick="showContact();"></li>
                     </ul>
                 </div>
-            </div>
-            <div id="skills" class="top-div" style="background-color: black;">
+            </section>
+            
+            <section id="skills" class="top-div clearfix" style="background-color: black;">
                 <div class="wrap">
                 <div class="cube">
                     <div id="frnt" class="front" onmouseover="stoprotate(); skillstart('div1');" onmouseout="resumerotate(); skillstop('div1');"><a class="cube-font"><p>HTML</p></a></div>
@@ -125,15 +126,15 @@
                         <span style="padding-left:80px;">Expert</span>
                     </div>
                 </div>
-            </div>
-            <div id="about-me" class="nav-bar-div  bubbles">
+            </section>
+            <section id="about-me" class="nav-bar-div  bubbles">
                 <div class="container">
                 <div class="flipper">
                         <div class="flip-card-front"></div>
                         <div class="flip-card-back"></div>
                 </div>
                </div>
-            </div>
+            </section>
         </div>
     </body>
 </html>
