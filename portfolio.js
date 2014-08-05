@@ -4,6 +4,7 @@ $(document).ready(function(){
     $("#home-section").addClass("reset-intro-content");
     $("#contactID").hide();
     
+    $("#plane").sprite({fps: 8, no_of_frames: 14});
     
     
 });

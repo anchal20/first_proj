@@ -302,6 +302,96 @@ table {
     background-position: 0px -33px;   
 }
 
+.new_home {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background: white;
+}
+
+#sky {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-image: url("sky.jpg");
+    background-repeat: repeat-x;
+    animation: animate-sky 32s linear infinite;
+    -webkit-animation: animate-sky 32s linear infinite;
+    -moz-animation: animate-sky 32s linear infinite;
+    -o-animation: animate-sky 32s linear infinite;
+}
+
+@keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-webkit-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-moz-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-o-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+
+#city1{
+    width: 100%;
+    height: 300px;
+    margin-top: 8%;
+    position: absolute;
+    background-image: url("city1.png");
+    background-repeat: repeat-x;
+    z-index: 10;
+    animation: animate-city1 30s linear infinite;
+    -webkit-animation: animate-city1 30s linear infinite;
+    -moz-animation: animate-city1 30s linear infinite;
+    -o-animation: animate-city1 30s linear infinite;
+}
+
+@keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-webkit-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-moz-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-o-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+
+#city2{
+    width: 100%;
+    height: 300px;
+    margin-top: 8%;
+    position: absolute;
+    background-image: url("city2.png");
+    background-repeat: repeat-x;
+    z-index: 30;
+    animation: animate-city1 28s linear infinite;
+    -webkit-animation: animate-city1 28s linear infinite;
+    -moz-animation: animate-city1 28s linear infinite;
+    -o-animation: animate-city1 28s linear infinite;
+}
+
+#plane {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 730px;
+    height: 167px;
+    position: absolute;
+    background: transparent url("planesprite4.png") 0 50px no-repeat;
+}
+
 .top-div {
     width: 100%;
     height: 700px;
