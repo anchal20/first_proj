@@ -3,53 +3,78 @@
     <head>
         <link type="text/css" rel="stylesheet" href="stylesheet.css" />
         <script src="jquery-1.11.1.min.js"></script>
-        <script src="jquery.backgroundpos.js"></script>
-        <script src="jquery.backgroundpos.min.js"></script>
+        <script src="jquery.spritely-0.1.js"></script>
         <script src="portfolio.js"></script>
         <script></script>
     </head>
     <body>
-        <div class="background-div">
-            <div class="blank-div"></div>
+        <div id="main" class="background-div">
+            
             <div class="topmost-div clearfix">
-                <div>
-                    <ul>
-                    <li><a href="index.html" id="home">HOME-new</a></li>
-                    <li><a href="index.html">MY WORK</a></li>
-                    <li><a href="index.html">ABOUT ME</a></li>
+                
+                <ul>
+                    <li id="about"><a href="#about-me" onclick="select_screen('about');">ABOUT ME</a></li>
+                    <li id="skill_ref" ><a href="#skill_section" onclick="select_screen('skill_ref');">SKILLS</a></li>
+                    <li><a href="home.html" id="home">HOME</a></li>
                 </ul>
+                
+            </div>
+            <div id="home_section" class="new_home">
+                <div id="sky"></div>
+                <div id="city1"></div>
+                <div id="city2"></div>
+                <div id="plane"></div>
+            </div>
+            <div id="contact_section" class="contacts-div">
+                <div id="contactID" class="footer">
+                    <ul>
+                        <li >
+                            <a title="Close" class="ft-icon cls-li" onclick="closeContact();"></a>
+                        </li>
+                        <li ><a title="LinkedIn" class=" ft-icon lnk-li"></a></li>
+                        <li ><a title="Email" class=" ft-icon email-li"></a></li>
+                        <li ><a title="Facebook" class=" ft-icon f-li"></a></li>
+                    </ul>
+                </div>
+                <div id="infoID" class="footer">
+                    <ul>
+                        <li title="Contact Info" class=" ft-icon info-li" onclick="showContact();"></li>
+                    </ul>
                 </div>
             </div>
-            <!-- <div class="scroll-name">
-                <img src="hi1.png" alt="" />
-            </div> -->
-            <div class="name-div">
-                <div id="name1">
-                    <span>H</span>
-                    <span>i</span>
-                    <span>!</span>
+            <div id="skill_section" class="skills">
+                <div id="cloud"></div>
+                <div id="sun"></div>
+                <div id="cloud1"></div>
+                <div id="grass"></div>
+                <div id="direction">
+                    <a href="http://www.w3schools.com/jquery/jquery_hide_show.asp">
+                    <div id="guide"></div></a>
+                    <div id="l1">
+                        <a></a>
+                    </div>
+                    <div id="l2">
+                        <a></a>
+                    </div>
+                    <div id="l3">
+                        <a></a>
+                    </div>
+                    <div id="l4">
+                        <a></a>
+                    </div>
+                    <div id="l5">
+                        <a></a>
+                    </div>
                 </div>
-                
-                <div id="name2">
-                    <span>T</span>
-                    <span>h</span>
-                    <span>i</span>
-                    <span>s</span>
-                    <span style="padding: 10px"></span>
-                    <span>i</span>
-                    <span>s</span>
-                </div>
-                
-                <div id="name4">
-                    <span>A</span>
-                    <span>n</span>
-                    <span>c</span>
-                    <span>h</span>
-                    <span>a</span>
-                    <span>l</span>
-                </div>
-                
-                <!-- <h1>Hi! This is <b id="name" style="text-shadow: 5px 5px 5px #FF0000;">Anchal</b> </h1> -->
             </div>
-         </div>   
+            <div id="about-me" class="nav-bar-div  bubbles">
+                <div class="container">
+                <div class="flipper">
+                        <div class="flip-card-front"></div>
+                        <div class="flip-card-back"></div>
+                </div>
+               </div>
+            </div>
+        </div>
     </body>
+</html>

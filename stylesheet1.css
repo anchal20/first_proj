@@ -1,0 +1,720 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.pink {
+    width: 100%;
+    background-color: #FFB6C1;}
+.magenta {background-color: #FF3399;}
+.red {background-color: #980000; }
+.blue {
+    width: 100%;
+    background-color: #02c9c9;}
+.green {background-color: #99FF33;}
+.yellow {background-color: #FFFF33;}
+
+.background-div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: background 1s ease-in-out, opacity 1s ease-in-out;
+    -webkit-transition: background 1s ease-in-out, opacity 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/*******
+.scroll-name {
+    background-image: url(967691_694301987255465_630469358_n.jpg);
+    background-color: #000000;
+    width: 400px;
+    height: 83px;
+}
+
+.scroll-name img {
+    display: block;   
+}
+*****/
+
+.topmost-div {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 50;
+}
+
+.clearfix {
+    clear: both;   
+}
+
+.blank-div {
+    width: 100%;
+    height: 13px;
+}
+
+.intro {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    height: 700px;
+    transition: transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -o-transition: -o-transform 1s ease-in-out;
+    -webkit-transform:rotate(20deg);
+    transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+}
+
+.reset-intro-content{
+    -webkit-transition:-webkit-transform 1s ease-in-out;
+    -webkit-transform:rotate(10deg);
+     transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+     transition:-webkit-transform 1s ease-in-out;
+     transition:-moz-transform 1s ease-in-out;
+}
+
+.animate-intro {
+    -webkit-transition:-webkit-transform 1s ease-in-out;
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+    transition: transform 1s ease-in-out;
+    -moz-transform:rotate(0deg);
+     -moz-transition:-moz-transform 1s ease-in-out;
+    -o-transition:-o-transform 1s ease-in-out;
+    -o-transform: rotate(0deg);
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display:block;
+}
+.active{
+    opacity:1;
+}
+.inactive {
+    opacity: 0;
+}   
+
+.big-heading{
+    margin-bottom:20px;
+    line-height:10px;
+}
+
+.big-letter{
+    height:145px;
+    width:60px;
+    display:inline-block;
+    transition:background-position .3s;
+    -moz-transition:background-position .3s;
+    -webkit-transition:background-position .3s;
+    -o-transition:background-position .3s;
+}
+
+
+.lth {
+    background: url("H.png") no-repeat;
+}
+.lti {
+    background: url("II.png") no-repeat;
+    width: 25px;
+}
+.exclamation {
+    background: url("exclamation.png") no-repeat;
+    width: 25px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+.ltt {
+    background: url("T.png") no-repeat;
+}
+.lts {
+    background: url("S.png") no-repeat;
+    margin-right: 25px;
+}
+.lta {
+    background: url("A.png") no-repeat;
+    width: 66px;
+}
+.ltn {
+    background: url("N.png") no-repeat;
+}
+.ltc {
+    background: url("C.png") no-repeat;
+}
+.ltl {
+    background: url("L.png") no-repeat;
+}
+
+.small-heading{
+    margin-bottom:20px;
+    line-height:10px;
+}
+
+.small-heading div {
+    display: inline-block;
+}
+.small-letter{
+    height:37px;
+    width:23px;
+    display:inline-block;
+    transition:background-position .3s ease-in-out;
+    -moz-transition:background-position .3s ease-in-out;
+    -webkit-transition:background-position .3s ease-in-out;
+    -o-transition:background-position .3s ease-in-out;
+}
+
+.sma {
+    background: url("sma.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smb {
+    background: url("smb.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.comma {
+    background: url("comma.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smd {
+    background: url("smd.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 15px;
+    margin-right: -10px;
+}
+.sme {
+    background: url("sme.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smf {
+    background: url("smf.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 15px;
+    margin-right: -10px;
+}
+.smg {
+    background: url("smg.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;    
+}
+.smi {
+    background: url("smi.png") no-repeat;
+    background-position:0px 0px;
+}
+.sml {
+    background: url("sml.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smm {
+    background: url("smm.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: 8px;
+}
+.smn {
+    background: url("smn.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smo {
+    margin-right: -10px;
+    background: url("smo.png") no-repeat;
+    background-position:0px 0px;
+}
+.smp {
+    background: url("smp.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smr {
+    background: url("smr.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smv {
+    background: url("smv.png") no-repeat;
+    background-position:0px 0px;
+    margin-right: -10px;
+}
+.smw {
+    background: url("smw.png") no-repeat;
+    background-position:0px 0px;
+    margin-left: 10px;
+}
+
+#i:hover span,#am:hover span,#a:hover span,#web:hover span,#dev:hover span,#frm:hover span,#bngl:hover span,#com:hover span,#ind:hover span {
+    background-position: 0px -33px;   
+}
+
+.new_home {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: black;
+}
+
+#sky {
+    width: 100%;
+    height: 416px;
+    position: absolute;
+    background: transparent url("sky.jpg") 0 0px repeat-x;
+    animation: animate-sky 32s linear infinite;
+    -webkit-animation: animate-sky 32s linear infinite;
+    -moz-animation: animate-sky 32s linear infinite;
+    -o-animation: animate-sky 32s linear infinite;
+}
+
+@keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-webkit-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-moz-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+@-o-keyframes animate-sky{
+    from {background-position: 100% 0;}
+    to {background-position: 0 0}
+}
+
+#city1{
+    width: 100%;
+    height: 416px;
+    top: 5%;
+    position: absolute;
+    background: transparent url("city1.png") 0 130px repeat-x;
+    z-index: 10;
+    animation: animate-city1 30s linear infinite;
+    -webkit-animation: animate-city1 30s linear infinite;
+    -moz-animation: animate-city1 30s linear infinite;
+    -o-animation: animate-city1 30s linear infinite;
+}
+
+@keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-webkit-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-moz-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+@-o-keyframes animate-city1 {
+    from {background-position: 100% 0;}
+    to {background-position: 0 0;}
+}
+
+#city2{
+    width: 100%;
+    height: 416px;
+    top: 5%;
+    position: absolute;
+    background: transparent url("city2.png") 0 130px repeat-x;
+    z-index: 30;
+    animation: animate-city1 28s linear infinite;
+    -webkit-animation: animate-city1 28s linear infinite;
+    -moz-animation: animate-city1 28s linear infinite;
+    -o-animation: animate-city1 28s linear infinite;
+}
+
+#plane {
+    top: 4%;
+    margin-left: 10%;
+    width: 730px;
+    height: 167px;
+    position: absolute;
+    background: transparent url("planesprite3.png") 0 50px no-repeat;
+}
+
+.top-div {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    border: 1px solid;
+}
+
+
+
+.wrap {
+    margin-top: 10%;
+    margin-left: 15%;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective-origin: 50% 150px;
+    -webkit-perspective-origin: 50% 150px;
+    -moz-perspective-origin: 50% 150px;
+    -o-perspective-origin: 50% 150px;
+}
+
+.cube {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    animation: spin 10s infinite linear;
+    -webkit-animation: spin 10s infinite linear;
+    -moz-animation: spin 10s infinite linear;
+    -o-animation: spin 10s infinite linear;
+    
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from {transform: rotateY(0);}
+    to {transform: rotateY(360deg);}
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotateY(0);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+
+.cube div {
+    background-color: wheat;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    text-align: center;
+    box-shadow: inset 0 0 30px;
+}
+
+.front {
+    transform: translateZ(150px);
+    -webkit-transform: translateZ(150px);
+}
+
+.back {
+    transform: translateZ(-150px) rotateY(180deg);
+    -webkit-transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+    transform: translateZ(-150px) rotateY(270deg);
+    transform-origin: center left;
+    -webkit-transform: translateZ(-150px) rotateY(270deg);
+    -webkit-transform-origin: center left;
+}
+
+.right {
+    transform: translateZ(-150px) rotateY(-270deg);
+    transform-origin: top right;
+    -webkit-transform: translateZ(-150px) rotateY(-270deg);
+    -webkit-transform-origin: top right;
+}
+
+.cube-font p{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.stopRotation {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+}
+
+
+.right-div {
+    margin-right: 10%;
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+}
+
+.container-skill {
+    background-color: wheat;
+    border: wheat 1px solid;
+    width: 550px;
+    height: 350px;
+    
+}
+
+.right-div div {
+    border-left:#990000 1px solid;
+    height: 53px;
+    text-align: center;
+}
+
+.skill-bar {
+    width: 59px;
+    background:#990000;
+    padding-top: 22px;
+    font-family: cursive;
+    font-weight: bold;
+    word-wrap: break-word;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+
+#skill-meter {
+    margin-top: 30px;
+    height: 18px;
+    border-bottom:#990000 3px solid;
+}
+
+#skill-meter span {
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+.skill1-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 420px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill2-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 350px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill3-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 210px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+.skill4-animate {
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    width: 300px;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+}
+
+.nav-bar-div {
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+}
+
+.bubbles {
+    background: url("bubbles.png");
+    background-color: #02c9c9;
+    width: 100%;
+    height: 700px;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    z-index: 200;
+    animation: animateBubbles 17s linear infinite;
+    -webkit-animation: animateBubbles 17s linear infinite;
+    -moz-animation: animateBubbles 17s linear infinite;
+    -o-animation: animateBubbles 17s linear infinite;
+}
+
+@keyframes animateBubbles {
+    from {background-position: 0 0; }
+    to {background-position: 100% 0; }
+}
+@-webkit-keyframes animateBubbles {
+    from {background-position: 0 0; }
+    to {background-position: 100% 0; }
+}
+@-moz-keyframes animateBubbles {
+    from {background-position: 0 0; }
+    to {background-position: 100% 0; }
+}
+@-o-keyframes animateBubbles {
+    from {background-position: 0 0; }
+    to {background-position: 100% 0; }
+}
+
+.container {
+    margin: 12% 0 10% 8%;
+    border: 1px solid;
+    perspective: 800px;
+}
+
+.flipper {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+}
+
+.container:hover .flipper, .container.hover .flipper {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.container, .flip-card-front, .flip-card-back {
+    width: 400px;
+    height: 350px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: red;   
+}
+
+.flip-card-back {
+    background-color: green;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.contacts-div {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.footer {
+    background: url("bg_footer.png");
+    width: 100%;
+    height: 100px;
+    
+}
+
+.footer li {
+    float: right;
+    display: inline;
+}
+
+.ft-icon {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    margin-top: 25px
+}
+
+ .f-li {
+    background: url("facebook.png");
+}
+.lnk-li {
+    background: url("linked-in.png");
+}
+.email-li {
+    background: url("email.png");
+}
+.cls-li {
+    margin-right: 20px;
+    background: url("close.png");
+}
+
+.info-li {
+    background: url("info.png");
+    margin-right: 20px;
+}
+
+.topmost-div ul {
+    padding-top: 18px;
+}
+
+.topmost-div li {
+    float: right;
+    font-family: cursive;
+    display: inline;
+    border-width: none;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 5px;
+    box-shadow: 7px 5px 2px;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
