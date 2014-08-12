@@ -47,8 +47,15 @@ table {
 	border-spacing: 0;
 }
 
-.black {background-color: black;
-width: 100%;}
+.black {
+    background-color: black;
+    width: 100%;}
+.white {
+    background-color: #F0F5FF;
+    width: 100%;}
+.blue {
+    background-color: #C2D6FF;
+    width: 100%;}
 
 .background-div {
     margin-bottom: -200px;
@@ -189,7 +196,7 @@ width: 100%;}
 .skills {
     width: 100%;
     height: 650px; 
-    background: #F0F5FF url(skyBackground.jpg) repeat-x;
+    background: url(skyBackground.jpg) repeat-x;
 }
 #sun {
     width: 150px;
@@ -242,25 +249,24 @@ width: 100%;}
 #grass {
     width: 100%;
     height: 100px;
-    margin-top: 42%;
-    
+    bottom: 0;
     position: absolute;
     background: url("grass4.png") 0 10px repeat-x;
 }
 #direction {
     width: 215px;
     height: 410px;
+    bottom: 0;
     position: absolute;
     z-index: 10;
     background: url("guide1.png") no-repeat;
-    margin-top: 19%;
-    margin-left: 5%;
+    left: 5%;
 }
 #guide {
     background: url('skill.png') 0% 100% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
+    position: absolute;
     top: 26px;
     left:23%;
 }
@@ -272,8 +278,8 @@ width: 100%;}
     background: url('html.png') 0% 82% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
-    top: 15%;
+    position: absolute;
+    top: 26%;
     left:2%;
 }
 #l1:hover {
@@ -284,9 +290,9 @@ width: 100%;}
     background: url('css.png') 0% 81% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
-    top: 8%;
-    left:39%;
+    position: absolute;
+    top: 29%;
+    left:41%;
 }
 #l2:hover {
     background-position: 0% 0%;
@@ -296,35 +302,35 @@ width: 100%;}
     background: url('java.png') 0% 93% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
-    top: 8%;
+    position: absolute;
+    top: 40%;
     left:6%;
 }
 #l3:hover {
     left: 7%;
-    background-position: 10% 0%;
+    background-position: 0% 10%;
 }
 
 #l4 {
     background: url('jquery.png') 0% 88% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
-    top: 3%;
+    position: absolute;
+    top: 46%;
     left:44%;
 }
 #l4:hover {
-    top:1%;
+    top:45%;
     left:45%;
-    background-position: 10% 0%;
+    background-position: 10% 10%;
 }
 
 #l5 {
     background: url('coming1.png') 0% 88% no-repeat;
     width: 106px;
     height: 44px;
-    position: relative;
-    top: -10px;
+    position: absolute;
+    top: 52%;
     left:5%;
 }
 #l5:hover {    
@@ -369,7 +375,9 @@ width: 100%;}
 }
 
 .container {
-    margin: 12% 0 10% 8%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
     border: 1px solid;
     perspective: 800px;
 }
@@ -394,7 +402,7 @@ width: 100%;}
 }
 
 .container, .flip-card-front, .flip-card-back {
-    width: 400px;
+    width: 330px;
     height: 350px;
 }
 
@@ -408,7 +416,7 @@ width: 100%;}
 
 
 .flip-card-front {
-    background-color: red;   
+    background: url('me2.jpg') no-repeat;
 }
 
 .flip-card-back {
