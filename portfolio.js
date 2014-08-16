@@ -1,6 +1,9 @@
 /******************document ready function*******************/
 $(document).ready(function(){   
-    
+    $("#main_body").addClass("black");
+    $("#about-me").removeClass("active show").addClass("hide inactive");
+    $("#skill_section").removeClass("active show").addClass("inactive hide");
+    $("#home_section").removeClass("inactive hide").addClass("show active");
     
     $("#contactID").hide();
     
@@ -64,18 +67,8 @@ var HomeHeadingInterval;
 function HomeHeadingAnimation(){
         HomeHeadingInterval=setInterval(animateHeadingText,1000);
 }
-/********************* onload function ***************************/
-window.onload=function() {
-    $("#main_body").addClass("black");
-    $("#skill_section").removeClass("active show").addClass("inactive hide");
-    $("#home_section").removeClass("inactive hide").addClass("show active");
-    $("#about-me").removeClass("active show").addClass("hide inactive");
-};
 
-
-
-/****************************************************************************************/
-
+/********************************************************************************/
 
 /*********************************** contacts ********************************************/
 function closeContact() {
