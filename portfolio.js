@@ -8,10 +8,23 @@ $(document).ready(function(){
     $('#sun').sprite({fps:4, no_of_frames: 4});
     
 });
-/********* ends here **********/
+/************************************ ends here ***************************/
+/***************************** reset all ***************************************/
+function reset() {
+    $('#direct').removeClass("html_mov css_mov java_mov jquery_mov");
+    $('#h-board').removeClass("show active").addClass("hide inactive");
+    $('#c-board').removeClass("show active").addClass("hide inactive");
+    $('#j-board').removeClass("show active").addClass("hide inactive");
+    $('#jq-board').removeClass("show active").addClass("hide inactive");
+    $('#rd1').removeClass("show active").addClass("hide inactive");
+    $('#rd').removeClass("show active").addClass("hide inactive");
+}
+/*******************************************************************************/
+
+/******************************* select screen *********************************/
 function select_screen(screen_id) {
     var id = screen_id;
-    
+    reset();
     if (id=='skill_ref'){
         $('#main_body').removeClass("black blue bubbles").addClass("white");
         $("#skill_section").removeClass("hide inactive").addClass("active show");
