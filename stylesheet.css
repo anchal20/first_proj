@@ -54,7 +54,9 @@ table {
     background-color: #F0F5FF;
     width: 100%;}
 .blue {
-    background-color: #C2D6FF;
+    background-color: #A37AFF;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     width: 100%;}
 
 .background-div {
@@ -250,17 +252,18 @@ table {
     width: 100%;
     height: 100px;
     bottom: 0;
+    z-index: 1;
     position: absolute;
     background: url("grass4.png") 0 10px repeat-x;
 }
-#direction {
+.direction {
     width: 215px;
     height: 410px;
     bottom: 0;
     position: absolute;
     z-index: 10;
     background: url("guide1.png") no-repeat;
-    left: 5%;
+    left: 44%;
 }
 #guide {
     background: url('skill.png') 0% 100% no-repeat;
@@ -335,7 +338,107 @@ table {
 }
 #l5:hover {    
     background-position: 10% 0%;
-}   
+}  
+
+.html_mov {
+    left:80%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.css_mov {
+    left: 10%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.java_mov {
+    left: 80%;
+    transform: translateZ(-100px);
+    -webkit-transform: -webkit-translateZ(-100px);
+    -moz-transform: translateZ(-100px);
+    -o-transform: translateZ(-100px);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.jquery_mov {
+    left: 10%;
+    transform: translateZ(200px);
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    -o-transform: translateZ(200px);
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+}
+
+.board {
+    position: absolute;
+    width: 450px;
+    height: 330px;
+    z-index: 2;
+}
+.html_board {
+    left: -4%;
+    top:50%;
+    background: transparent url('cartoon_wood_sign1.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.css_board {
+    left: 65%;
+    top:50%;
+    background: transparent url('cartoon_wood_sign2.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.java_board {
+    left: -4%;
+    top:50%;
+    background: transparent url('cartoon_wood_sign3.png') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.jquery_board {
+    left: 65%;
+    top:50%;
+    background: transparent url('cartoon_wood_sign4.png') no-repeat;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.road {
+    top: 60%;
+    left: 45%;
+    width: 800px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    background:transparent url('direj95yT.svg') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
+.road1 {
+    left: -6%;
+    top: 60%;
+    width: 800px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    background:transparent url('direj95yT.svg') no-repeat;
+    animation: com 4s linear;
+    -webkit-animation: com 4s linear;
+    -moz-animation: com 4s linear;
+    -o-animation: com 4s linear;
+}
 
 .nav-bar-div {
     overflow: hidden;
@@ -376,7 +479,7 @@ table {
 
 .container {
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 10%;
     border: 1px solid;
     perspective: 800px;
@@ -420,11 +523,52 @@ table {
 }
 
 .flip-card-back {
-    background-color: green;
+    background: url('me3.jpg') no-repeat;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+}
+
+.comment {
+    width: 760px;
+    height: 500px;
+    background:transparent url('comment1.png') 0px 0px no-repeat;
+    position: absolute;
+    left: 40%;
+    top:15%;
+}
+.comment1 {
+    width: 380px;
+    height: 300px;
+    background:transparent url('comment2.png') 0px 0px no-repeat;
+    position: absolute;
+    animation: com 1s linear;
+    -webkit-animation: com 2s linear;
+    -moz-animation: com 2s linear;
+    -o-animation: com 2s linear;
+    left: -2%;
+    top: -6%;
+}
+@keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@-o-keyframes com {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
 }
 
 .contacts-div {

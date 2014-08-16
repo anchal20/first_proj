@@ -46,34 +46,44 @@
                 <div id="cloud"></div>
                 <div id="sun"></div>
                 <div id="cloud1"></div>
-                <div id="grass"></div>
-                <div id="direction">
-                    <a href="http://www.w3schools.com/jquery/jquery_hide_show.asp">
+                
+                <div id="direct" class="direction">
+                    <a href="#skill_section">
                     <div id="guide"></div></a>
-                    <div id="l1">
+                    <div id="l1" onclick="html_disp();">
                         <a></a>
                     </div>
-                    <div id="l2">
+                    <div id="l2" onclick="css_disp();">
                         <a></a>
                     </div>
-                    <div id="l3">
+                    <div id="l3" onclick="java_disp();">
                         <a></a>
                     </div>
-                    <div id="l4">
+                    <div id="l4" onclick="jquery_disp();">
                         <a></a>
                     </div>
                     <div id="l5">
                         <a></a>
                     </div>
                 </div>
+                <div id="h-board" class="html_board board hide inactive"></div>
+                <div id="c-board" class="css_board board hide inactive"></div>
+                <div id="j-board" class="java_board board hide inactive"></div>
+                <div id="jq-board" class="jquery_board board hide inactive"></div>
+                <div id="rd" class="road hide inactive"></div>
+                <div id="rd1" class="road1 hide inactive"></div>
             </div>
             <div id="about-me" class="nav-bar-div">
-                <div class="container">
+                <div class="container" onmouseover="show_back();" onmouseout="remove_com();">
                 <div class="flipper">
                         <div class="flip-card-front"></div>
                         <div class="flip-card-back"></div>
                 </div>
-               </div>
+                </div>
+                <div id="com1" class="comment1 hide inactive"></div>
+                <div class="comment">
+                    
+                </div>
             </div>
         </div>
     </body>
